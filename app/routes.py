@@ -10,6 +10,6 @@ def index():
 def autogestion():
     return render_template('autogestion.html')
 
-@app.route('/Colaboracion')
+@app.route('/colaboracion')
 def colaboracion():
     return render_template('colaboracion.html')
