@@ -9,3 +9,7 @@ def index():
 @app.route('/autogestion')
 def autogestion():
     return render_template('autogestion.html')
+
+@app.route('/Colaboracion')
+def colaboracion():
+    return render_template('colaboracion.html')
