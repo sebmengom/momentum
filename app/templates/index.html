@@ -2,3 +2,19 @@
 
 
 {% block title %}Momentum{% endblock %}
+
+{% block content %}
+  <center>
+      <h1>Bienvenido a mi Momentum!</h1>
+      <div class="container">
+      <p>YAPEA.</p>
+      <p>YAPEA</p>
+      <div class="media">
+        <img src="{{ url_for('static', filename='imagen1.jpeg') }}" class="align-self-center mr-3" style="max-width: 300px;" alt="...">
+        <div class="media-body">
+          <h5 class="mt-0">Center-aligned media</h5>
+          <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+          <p class="mb-0">Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        </div>
+  </center>
+{% endblock %}
