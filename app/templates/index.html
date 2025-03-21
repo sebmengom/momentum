@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Momentum</title>
-    </head>
-    <body>
-        <h1>Bienvenido a mi momentum</h1>
-        <h2>Mis competencias, Sebastian Mendez</h2>
-        <a href="{{ url_for('autogestion') }}"">Autogestión</a>
-        <a href="{{ url_for('colaboracion')}}"">Comunicación</a>
-    </body>
-</html>
+{% extends 'base.html' %}
+
+
+{% block title %}Momentum{% endblock %}
