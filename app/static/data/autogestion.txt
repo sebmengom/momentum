@@ -1,4 +1,3 @@
 (1) Hacer la turbina eólica me ayudó mucho a desarrollar la competencia de colaboración, ya que aprendí a aplicar mis habilidades junto con las de mis compañeros para crear un gran proyecto. No solo funcionó bien, sino que también se veía muy bien estéticamente. Fue una de las mejores experiencias de la prepa, ya que todos en mi equipo somos amigos cercanos y trabajar juntos, expresando nuestras ideas, fue una experiencia de crecimiento y aprendizaje.(2) Este proyecto fue uno de los primeros en los que realmente entendí qué es la colaboración. En este caso, cada miembro del equipo usó sus fortalezas: algunos construyeron el carro, otros programaron y conectaron los cables del microbit. Todos comunicamos nuestras ideas claramente y logramos un gran proyecto en el que colaboramos de manera efectiva.
-quit
 
 
