@@ -1,6 +1,7 @@
 from app import app
 from flask import render_template
 
+
 @app.route('/')
 @app.route('/index')
 def index():
@@ -13,3 +14,8 @@ def autogestion():
 @app.route('/colaboracion')
 def colaboracion():
     return render_template('colaboracion.html')
+
+@app.route('/fotos')
+def fotos():
+
+    return render_template('fotos.html')
