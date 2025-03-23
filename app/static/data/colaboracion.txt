@@ -1,0 +1,14 @@
+Descripción:
+(1) Durante la prepa, realicé varios proyectos, pero sin duda los más complejos y largos fueron aquellos en los que se tuvo que hacer un modelo físico. Uno de ellos fue una turbina eólica. Aunque parezca sencillo, nos tomó poco más de tres semanas completarlo debido a problemas en la impresión 3D, ya que tuvimos que repetirla tres veces. Además, pegar las piezas fue complicado porque no encajaban bien y, finalmente, encontrar un motor que funcionara también fue un desafío.
+
+(2) Otro proyecto fue un carro de competencias usando un microbit. Lo más difícil fue construir una base que realmente funcionara. En estos proyectos, la comunicación en equipo fue clave, ya que era muy estresante cuando las cosas no salían bien y había que repetirlas varias veces. Sin embargo, al final, todos aplicamos nuestras habilidades en lo que éramos buenos y logramos completar el proyecto con éxito. Como dato curioso, ganamos la carrera del salón con nuestro coche y nos dieron galletas.
+
+Argumentación:
+(1) Hacer la turbina eólica me ayudó mucho a desarrollar la competencia de colaboración, ya que aprendí a aplicar mis habilidades junto con las de mis compañeros para crear un gran proyecto. No solo funcionó bien, sino que también se veía muy bien estéticamente. Fue una de las mejores experiencias de la prepa, ya que todos en mi equipo somos amigos cercanos y trabajar juntos, expresando nuestras ideas, fue una experiencia de crecimiento y aprendizaje.
+
+(2) Este proyecto fue uno de los primeros en los que realmente entendí qué es la colaboración. En este caso, cada miembro del equipo usó sus fortalezas: algunos construyeron el carro, otros programaron y conectaron los cables del microbit. Todos comunicamos nuestras ideas claramente y logramos un gran proyecto en el que colaboramos de manera efectiva.
+
+Multiculturalidad:
+(1) Este proyecto tuvo un componente multicultural, ya que investigamos modelos de turbinas utilizados en diferentes partes del mundo y cómo se adaptan a las condiciones climáticas y necesidades energéticas de cada región. Comprender cómo otras culturas abordan la generación de energía renovable enriqueció mi perspectiva y me hizo valorar la diversidad de soluciones tecnológicas a nivel global.
+
+(2) La multiculturalidad también estuvo presente en este proyecto, ya que exploré cómo la robótica y la programación se aplican en diferentes países. Las competencias de robótica y la creación de robots no son exclusivas de México, sino que se realizan en todo el mundo. Esta experiencia fue una pequeña introducción para mí a un ámbito global de innovación tecnológica.
