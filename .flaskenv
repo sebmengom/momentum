@@ -1,2 +1,0 @@
-FLASK_APP=mm.py
-FLASK_DEBUG=1
