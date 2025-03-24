@@ -1,2 +1,3 @@
 app/config.py
 .flaskenv
+config.py
