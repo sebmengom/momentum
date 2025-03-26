@@ -28,4 +28,15 @@ h1.my-4 {
 .custom-frame {
   border: 5px solid #03202F;
   border-radius: 10px;
+}
+
+.btn-primary {
+  background-color: #ffffff;
+  border-color: #03202F;
+  color: #03202F;
+}
+
+.btn-primary:hover {
+  background-color: #03202F;
+  color: #ffffff;
 }/*# sourceMappingURL=styles.css.map */
