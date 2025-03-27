@@ -3,23 +3,20 @@ digraph {
 	graph [bgcolor="#EEEEEE" rankdir=TB splines=spline]
 	node [fontname=Roboto fontsize=12 shape=none]
 	edge [fontname=Roboto fontsize=10]
-	nombre [label=<
+	Nombre [label=<
         <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
-        <TR><TD COLSPAN="2" BGCOLOR="#3F51B5"><FONT COLOR="white">nombre</FONT></TD></TR>
+        <TR><TD COLSPAN="2" BGCOLOR="#3F51B5"><FONT COLOR="white">Nombre</FONT></TD></TR>
         <TR>
                          <TD BGCOLOR="#BBDEFB">id</TD>
                          <TD BGCOLOR="#BBDEFB">INTEGER (PK)</TD>
                          </TR><TR>
                          <TD BGCOLOR="#BBDEFB">nombre</TD>
                          <TD BGCOLOR="#BBDEFB">VARCHAR(64) (Index)</TD>
-                         </TR><TR>
-                         <TD BGCOLOR="#BBDEFB">apellido</TD>
-                         <TD BGCOLOR="#BBDEFB">VARCHAR(64) (Index)</TD>
-                         </TR></TABLE>> URL="http://nombre_details.html"]
-	nombre -> comment [label=comments color="#1E88E5" style=dashed tooltip="Relation between nombre and comment"]
-	comment [label=<
+                         </TR></TABLE>> URL="http://Nombre_details.html"]
+	Nombre -> Comment [label=comments color="#1E88E5" style=dashed tooltip="Relation between Nombre and Comment"]
+	Comment [label=<
         <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
-        <TR><TD COLSPAN="2" BGCOLOR="#3F51B5"><FONT COLOR="white">comment</FONT></TD></TR>
+        <TR><TD COLSPAN="2" BGCOLOR="#3F51B5"><FONT COLOR="white">Comment</FONT></TD></TR>
         <TR>
                          <TD BGCOLOR="#BBDEFB">id</TD>
                          <TD BGCOLOR="#BBDEFB">INTEGER (PK)</TD>
@@ -29,6 +26,6 @@ digraph {
                          </TR><TR>
                          <TD BGCOLOR="#BBDEFB">nombre_id</TD>
                          <TD BGCOLOR="#BBDEFB">INTEGER ()</TD>
-                         </TR></TABLE>> URL="http://comment_details.html"]
-	comment -> nombre [label=nombre color="#1E88E5" style=dashed tooltip="Relation between comment and nombre"]
+                         </TR></TABLE>> URL="http://Comment_details.html"]
+	Comment -> Nombre [label=nombre color="#1E88E5" style=dashed tooltip="Relation between Comment and Nombre"]
 }

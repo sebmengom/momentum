@@ -3,3 +3,36 @@
 {% block page_title %}
   Colaboración
 {% endblock %}
+{% block content %}
+<div class="container">
+  <div class="row align-items-center no-gutters mb-4">
+    <div class="col-md-5">
+      <img src="{{ url_for('static', filename='images/imagen3.jpeg')}}" class="img-thumbnail custom-frame" alt="img1" style="max-width: 75%; height: auto;">
+      <h2>Actividad 1</h2>
+      <p>Yap</p>
+    </div>
+    <div class="col-md-6 ">
+      <center>
+      <h2> La autogestión y yo:</h2>
+      <p>Para mi la autogestión, blah blah blah</p>
+      </center>
+    </div>
+
+  </div>
+
+  <div class="row align-items-center">
+    <div class="col-md-6" style="text-align: right;">
+      <h2>Actividad 2</h2>
+      <p>Yap
+      </p>
+    </div>
+    <div class="col-md-6">
+      <img src="{{ url_for('static', filename='images/imagen2.jpeg')}}" class="img-thumbnail custom-frame" alt="img2">
+    </div>
+  </div>
+</div>
+
+{% include '_comments.html' %}
+{% include 'comments.html' %}
+
+{% endblock %}

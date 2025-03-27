@@ -15,7 +15,8 @@ def autogestion():
 
 @app.route('/colaboracion')
 def colaboracion():
-    return render_template('colaboracion.html')
+    nombres = Nombre.query.all()
+    return render_template('colaboracion.html', nombres = nombres)
 
 @app.route('/fotos')
 def fotos():
