@@ -1,0 +1,23 @@
+
+<h1>Comentarios</h1>
+{% for n in nombres %}
+    <div class="nombre" >
+        <h2>{{ n.nombre }}</h2>
+        <ul>
+            {% for comment in n.comments %}
+                <li>{{ comment.content }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endfor %}
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+  {% for message in messages %}
+    <div class="alert alert-warning" role="alert">
+      {{ message }}
+    </div>
+  {% endfor %}
+{% endif %}
+{% endwith %}
+
+
