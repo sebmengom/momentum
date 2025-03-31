@@ -3,12 +3,16 @@ body {
   background-color: #ffffff;
   color: #03202F;
   font-weight: 100;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  flex: 1 0 auto;
 }
 
 h1.my-4 {
@@ -39,4 +43,9 @@ h1.my-4 {
 .btn-primary:hover {
   background-color: #03202F;
   color: #ffffff;
+}
+
+footer {
+  flex-shrink: 0;
+  margin-top: auto;
 }/*# sourceMappingURL=styles.css.map */

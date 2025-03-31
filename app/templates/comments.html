@@ -1,4 +1,5 @@
 <form action="{{ url_for('enviar_comentarios') }}" method="POST">
+  <input type="hidden" name="fuente" value="{{ request.url }}">
   <h1>Comenta sobre mi Momentum</h1>
   <div class="form-group">
     <label for="Nombre">Nombre</label>
@@ -9,4 +10,4 @@
     <textarea class="form-control" name="Comentario" id="Comentario" rows="3"></textarea>
   </div>
   <button type="submit" class="btn btn-primary">Enviar</button>
-</form>
+</form> 

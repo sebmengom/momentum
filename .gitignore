@@ -1,3 +1,6 @@
 app/config.py
 .flaskenv
 config.py
+mm.db
+models.py
+__pycache__/

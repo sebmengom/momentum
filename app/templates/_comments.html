@@ -2,7 +2,7 @@
 <h1>Comentarios</h1>
 {% for n in nombres %}
     <div class="nombre" >
-        <h2>{{ n.nombre }}</h2>
+        <h2 style="font-size: larger; font-style: oblique;">{{ n.nombre }}</h2>
         <ul>
             {% for comment in n.comments %}
                 <li>{{ comment.content }}</li>
