@@ -14,13 +14,25 @@ def index():
 
 @app.route('/autogestion')
 def autogestion():
-    nombres = Nombre.query.all()
-    return render_template('autogestion.html', nombres=nombres)
+    page = request.args.get('page', 1, type=int)
+    per_page = app.config['COMMENTS_PER_PAGE']
+    nombres = Nombre.query.paginate(
+        page=page,
+        per_page=per_page,
+        error_out=False
+    )
+    return render_template('autogestion.html', pagination = nombres, nombres = nombres.items, endpoint = 'autogestion')
 
 @app.route('/colaboracion')
 def colaboracion():
-    nombres = Nombre.query.all()
-    return render_template('colaboracion.html', nombres = nombres)
+    page = request.args.get('page', 1, type=int)
+    per_page = app.config['COMMENTS_PER_PAGE']
+    nombres = Nombre.query.paginate(
+        page=page,
+        per_page=per_page,
+        error_out=False
+    )
+    return render_template('colaboracion.html', nombres = nombres.items, pagination = nombres, endpoint = 'colaboracion')
 
 @app.route('/fotos')
 @login_required
