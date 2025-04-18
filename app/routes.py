@@ -6,6 +6,7 @@ from flask_login import current_user, login_user, logout_user, login_required
 from typing import Optional
 import sqlalchemy as sa
 import sqlalchemy.orm as so
+from sqlalchemy import text
 
 @app.route('/')
 @app.route('/index')
@@ -62,7 +63,7 @@ def login():
         return redirect(url_for('fotos'))
     form = LoginForm()
     if form.validate_on_submit():
-        user = db.session.scalar(sa.select(Usuario).where(Usuario.usuario == form.name.data))
+        user = db.session.scalar(sa.select(Usuario).where(Usuario.usuario == form.usuario.data))
         if user is None or not user.check_password(form.password.data):
             flash('Usuario o contraseña incorrectos')
             return redirect(url_for('login'))
@@ -81,10 +82,19 @@ def register():
         return redirect(url_for('fotos'))
     form = RegisterForm()
     if form.validate_on_submit():
-        user = Usuario(usuario=form.name.data)
+        user = Usuario(usuario=form.usuario.data)
         user.set_password(form.password.data)
         db.session.add(user)
         db.session.commit()
         flash('Registro Exitoso')
         return redirect(url_for('login'))
     return render_template('register.html', form=form)
+
+@app.route('/health')
+def health_check():
+    try:
+        # Envuelve la consulta en text()
+        db.session.execute(text('SELECT 1'))
+        return '✅ Conectado a RDS correctamente'
+    except Exception as e:
+        return f'❌ Error de conexión: {e}'

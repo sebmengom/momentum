@@ -12,9 +12,9 @@
                 <form method="POST" action="{{ url_for('login') }}">
                     {{ form.hidden_tag() }}
                     <div class="form-group">
-                        {{ form.name.label(class="form-control-label") }}
-                        {{ form.name(class="form-control") }}
-                        {% for error in form.name.errors %}
+                        {{ form.usuario.label(class="form-control-label") }}
+                        {{ form.usuario(class="form-control") }}
+                        {% for error in form.usuario.errors %}
                             <span class="text-danger">{{ error }}</span>
                         {% endfor %}
                     </div>

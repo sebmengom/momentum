@@ -12,9 +12,9 @@
                 <form method="POST" action="{{ url_for('register') }}">
                     {{ form.hidden_tag() }}
                     <div class="form-group">
-                        {{ form.name.label(class="form-control-label") }}
-                        {{ form.name(class="form-control") }}
-                        {% for error in form.name.errors %}
+                        {{ form.usuario.label(class="form-control-label") }}
+                        {{ form.usuario(class="form-control") }}
+                        {% for error in form.usuario.errors %}
                             <span class="text-danger">{{ error }}</span>
                         {% endfor %}
                     </div>
@@ -28,10 +28,10 @@
                     {{ form.submit(class="btn btn-primary btn-block") }}
                 </form>
                 <div class="card-footer text-center">
-                    <a href="{{ url_for('register') }}" class="btn btn-secondary">No tienes una cuenta? Registrate</a>
+                    <a href="{{ url_for('login') }}" class="btn btn-secondary">¿Ya tienes una cuenta? Inicia sesión</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
-{% endblock %} 
+{% endblock %}

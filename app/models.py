@@ -30,10 +30,12 @@ class Comment(db.Model):
 class Usuario(UserMixin, db.Model):
     id:so.Mapped[int] = so.mapped_column(sa.Integer, primary_key=True)
     usuario : so.Mapped[str] = so.mapped_column(sa.String(64), index=True, nullable=False, unique=True)
-    password_hash :so.Mapped[str] = so.mapped_column(sa.String(128), nullable=False)
+    password_hash :so.Mapped[str] = so.mapped_column(sa.String(200), nullable=False)
 
     def set_password(self, password):
         self.password_hash = generate_password_hash(password)
+        print(f'Password hash: {self.password_hash}')
+        print(f'Password: {password}')
     
     def check_password(self, password):
         return check_password_hash(self.password_hash, password)

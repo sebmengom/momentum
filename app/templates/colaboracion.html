@@ -1,35 +1,50 @@
 {% extends 'base.html' %}
 {% block title %}Colaboración{% endblock %}
 {% block page_title %}
-  Momentum | Colaboración
+Colaboración
 {% endblock %}
 {% block content %}
 <div class="container">
-  <div class="row align-items-center no-gutters mb-4">
-    <div class="col-md-5">
-      <img src="{{ url_for('static', filename='images/imagen3.jpeg')}}" class="img-thumbnail custom-frame" alt="img1" style="max-width: 75%; height: auto;">
-      <h2>Actividad 1</h2>
-      <p>Yap</p>
+
+
+  <div class="row justify-content-center mb-5">
+    <div class="col-md-8 text-center">
+      <h2>La autogestión y yo:</h2>
+      <p>Para mí, la colaboración ha sido una competencia que desarrollé gracias al <strong style="color:rgb(11, 11, 188);">TEC</strong>, ya que ahí aprendí a trabajar en equipo de forma efectiva desde el primer día. Entendí que lograr buenos resultados no depende solo de uno, sino de saber escuchar, aportar ideas y apoyarse mutuamente. Gracias a eso, aprendí a confiar en los demás y a valorar lo que cada persona puede aportar al objetivo común.</p>
     </div>
-    <div class="col-md-6 ">
+  </div>
+
+
+  <div class="row align-items-center no-gutters mb-4">
+    <div class="col-md-6">
       <center>
-      <h2> La autogestión y yo:</h2>
-      <p>Para mi la autogestión, blah blah blah</p>
+        <h2>Actividad 1</h2>
+        <p>Durante la prepa, realicé varios proyectos, pero sin duda los más complejos y largos fueron en los cuales se tuvo que hacer un modelo físico, la primera imagen se puede ver que es una turbina eólica, este proyecto fue muy difícil, aunque parezca fácil, nos tardamos poco más de 3 semanas en lograrlo, ya que hubo problemas durante la impresión 3D, ya que lo tuvimos que hacer 3 veces y tardaba mucho tiempo en quedar, luego pegar las piezas fue difícil ya que no quedaban bien, finalmente encontrar un motor que 
+          funcionara fue difícil.
+          </p>
       </center>
     </div>
-
+    <div class="col-md-5 text-center">
+      <img src="{{ url_for('static', filename='images/imagen10.jpeg')}}" class="img-thumbnail custom-frame" alt="img1" style="max-width: 75%; height: auto;">
+    </div>
   </div>
+
 
   <div class="row align-items-center">
-    <div class="col-md-6" style="text-align: right;">
+    <div class="col-md-6 text-center">
+      <video width="500" height="300" controls>
+        <source src="{{ url_for('static', filename='images/video1.mp4') }}" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <p></p>
+    </div>
+    <div class="col-md-6" style="text-align: left;">
       <h2>Actividad 2</h2>
-      <p>Yap
+      <p>Aqui hice, junto con mi equipo un carro de competencias con un microbit; lo más difícil fue crear una base funcional. La comunicación en el equipo fue clave, ya que repetir procesos por errores resultaba estresante. Al final, cada quien aportó sus habilidades y logramos que el proyecto saliera bien. Fun fact: ganamos la carrera del salón y nos premiaron con galletas.
       </p>
     </div>
-    <div class="col-md-6">
-      <img src="{{ url_for('static', filename='images/imagen2.jpeg')}}" class="img-thumbnail custom-frame" alt="img2">
-    </div>
   </div>
+
 </div>
 
 {% include '_comments.html' %}
